@@ -10,10 +10,10 @@ def years(age):
 
 
 def main():
-    name = input("What is your name?")
-    age = int(input("What is your age?"))
+    name = input("What is your name? ")
+    age = int(input("What is your age? "))
     solution = years(age)
-    print("You are going to be")
+    print("You are going to be 100 years old in %s" %(solution))
     return solution
 
 
