@@ -1,28 +1,20 @@
 import string
 import random
 
-# char_list = string.printable
-# print(char_list)
-# password = ""
-# length = random.randint(8,16)
-# print(length)
-# while len(password) < length:
-#     my_random = char_list[random.randint(0,len(char_list)-1)]
-#     password = password + my_random
-#
-# print(password)
 
 
-
-
+lower = "abcdefghijklmnopqrstuvwxyz"
+upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+nums = str(range(0,10))
+chars = "[!@#$%^&*()?]"
 
 def passwordgen():
-    char_list = string.printable
     password = ""
     length = random.randint(8,16)
     while len(password) < length:
-        my_random = char_list[random.randint(0,len(char_list)-1)]
-        password = password + my_random
+        rand_low = lower[random.randint(0,len(lower))]
+        
+
     return password
 
 
