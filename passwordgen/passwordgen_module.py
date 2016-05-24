@@ -15,6 +15,11 @@ def passwordgen():
         rand_low = lower[random.randint(0,len(lower))]
         password = password + rand_low
         rand_up = upper[random.randint(0, len(upper))]
+        password = password + rand_up
+        rand_num = nums[random.randint(0, len(nums))]
+        password = password + rand_num
+        rand_chars = chars[random.randint(0, len(chars))]
+        password = password + rand_chars
 
 
     return password
