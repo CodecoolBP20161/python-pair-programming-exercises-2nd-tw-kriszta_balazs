@@ -13,7 +13,9 @@ def passwordgen():
     length = random.randint(8,16)
     while len(password) < length:
         rand_low = lower[random.randint(0,len(lower))]
-        
+        password = password + rand_low
+        rand_up = upper[random.randint(0, len(upper))]
+
 
     return password
 
