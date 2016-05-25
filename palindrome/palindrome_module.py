@@ -4,8 +4,9 @@ def palindrome(text):
 
 
 def main():
-    print(palindrome("Indul a gorog aludni"))
-    return
+    answer = input("Enter a sentence! ")
+    print("This is " + str(palindrome(answer)))
+    return palindrome(answer)
 
 
 if __name__ == '__main__':
