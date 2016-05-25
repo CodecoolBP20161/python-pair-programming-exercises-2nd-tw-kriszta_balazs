@@ -4,7 +4,7 @@ b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 
 def listoverlap(list1, list2):
     list3 = set(list1) & set(list2)
-    return list3
+    return list(list3)
 
 
 def main():
