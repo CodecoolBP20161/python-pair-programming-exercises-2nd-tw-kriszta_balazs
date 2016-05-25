@@ -1,11 +1,10 @@
 def palindrome(text):
-    pal_text = text.replace(" ", "")
-    if pal_text == pal_text[::-1]:
-        return True
+    pal_text = text.replace(" ", "").lower()
+    return pal_text == pal_text[::-1]
 
 
 def main():
-    print(palindrome("indul a gorog aludni"))
+    print(palindrome("Indul a gorog aludni"))
     return
 
 
